@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navBar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10em;
+	min-height: 3.7em;
+	border-bottom: 1px solid rgb(206, 206, 206);
+}
+.navBar input {
+	background-color: rgb(240, 240, 240);
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	height: 2.4em;
+	width: 17em;
+	padding-left: 1em;
+}
+.navLinks a {
+	margin: .3em;
+	text-decoration: none;
+	color: black;
+}
+/* end of navbar */
+
+/* stories */
+.stories {
+	width: 29em;
+	height: 6.5em;
+	border-radius: 8px;
+	border: 1px solid rgb(206, 206, 206);
+	margin: 1.5em auto;
+	display: flex;
+	align-items: center;
+}
+.circle {
+	margin: .5em;
+	width: 3.8em;
+	height: 3.8em;
+	border-radius: 30px;
+	background-color: rgb(189, 165, 212);
+}
+/* end of stories */
+
+/* content part or posts */
+
+.post {
+	font-size: 14px;
+	width: 33.2em;
+	margin: 1em auto;
+	border-radius: 8px;
+	border: 1px solid rgb(206, 206, 206);
+}
+.postNav {
+	display: flex;
+	align-items: center;
+	padding: .5em;
+}
+.postCircle {
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 30px;
+	margin-right: .5em;
+	background-color: rgb(189, 165, 212);
+}
+.postNav a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+.threeDots {
+	font-size: 2em;
+	margin-left: auto;
+}
+.postImg img {
+	height: auto;
+	width: 33.1em;
+}
+.postIcons {
+	display: flex;
+}
+.postIcons p{
+	padding: .5em;
+}
+.bkmrk {
+	margin-left: auto;
+}
+.postInfo {
+	display: flex;
+}
+.postInfo p{
+	display: flex;
+	margin: .5em;
+}
+.userName {
+	font-weight: bold;
+}
