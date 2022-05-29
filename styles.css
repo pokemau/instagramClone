@@ -5,32 +5,64 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+/* main container */
+.mainContainer {
+	display: flex;
+	justify-content: center;
+	margin-right: 20em;
+}
 
 /* navbar */
 .navBar {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0 10em;
-	min-height: 3.7em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 3.7em;
 	border-bottom: 1px solid rgb(206, 206, 206);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
 }
-.navBar input {
+.navContent {
+	display: flex;
+	align-items: center;
+	width: 60em;
+}
+#navTitle {
+	margin-right: auto;
+}
+#navTitle h1 {
+	font-size: 25px;
+}
+.searchBar {
+	min-width: 8em;
+
+}
+.searchBar input {
 	background-color: rgb(240, 240, 240);
 	border-radius: 8px;
 	border: none;
 	outline: none;
 	font-size: 15px;
 	height: 2.4em;
-	width: 17em;
+	width: 100%;
 	padding-left: 1em;
 }
-.navLinks a {
-	margin: .3em;
+.navLinks {
+	display: flex;
+	justify-content: flex-end;
+}
+.navLinks i {
+	font-size: 22px;
+	cursor: pointer;
+	margin-left: 1em;
 	text-decoration: none;
 	color: black;
+	flex-wrap: nowrap;
 }
 /* end of navbar */
+
 
 /* stories */
 .stories {
@@ -38,7 +70,7 @@
 	height: 6.5em;
 	border-radius: 8px;
 	border: 1px solid rgb(206, 206, 206);
-	margin: 1.5em auto;
+	margin: 5em 0 1.5em 0;
 	display: flex;
 	align-items: center;
 }
@@ -52,7 +84,6 @@
 /* end of stories */
 
 /* content part or posts */
-
 .post {
 	font-size: 14px;
 	width: 33.2em;
@@ -103,4 +134,89 @@
 }
 .userName {
 	font-weight: bold;
+}
+/* end of contents */
+
+/* start of right side bar */
+.rightSidebarContent {
+	position: fixed;
+	top: 5em;
+	margin-left: 2em;
+}
+.currentAcc {
+	width: 20em;
+	display: flex;
+	align-items: center;
+}
+.currentAcc .circle {
+	margin-left: 0;
+}
+.profInfo {
+	font-size: .8em;
+}
+.profUsername {
+	font-weight: bold;
+}
+.profName {
+	color: rgb(143, 143, 143);
+}
+.switchBtn {
+	margin-left: auto;
+}
+/*suggestions*/
+.suggestTop {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0;
+	font-size: .8em;
+	font-weight: bold;
+}
+.suggestForYou {
+	font-size: 1em;
+	color: rgb(151, 151, 151);
+}
+.suggestionAccount {
+	display: flex;
+	align-items: center;
+	margin: .8em 0;
+}
+.suggestCircle {
+	width: 2.3em;
+	height: 2.3em;
+	background-color: rebeccapurple;
+	border-radius: 30px;
+}
+.suggestedInfo {
+	margin: 0 auto 0 .6em;
+}
+.suggestUsername {
+	font-weight: bold;
+	font-size: .8em;
+}
+.followedBy {
+	color: rgb(151, 151, 151);
+	font-size: .7em;
+}
+#follow , .switchBtn{
+	font-weight: 800;
+	color: #0095f6;
+	font-size: .7em;
+}
+
+/* end of right side bar */
+
+
+
+@media all and (max-width: 568px) {
+	.searchBar {
+		display: none;
+	}
+}
+@media all and (max-width: 888px) {
+	.rightSidebar {
+		display: none;
+	}
+	.mainSidebar {
+		margin: auto;
+	}
 }
